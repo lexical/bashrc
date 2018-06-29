@@ -14,8 +14,8 @@ export EDITOR=vim
 export DEBFULLNAME="Keng-Yu Lin"
 export DEBEMAIL="kengyu@lexical.tw"
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+#export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -118,6 +118,7 @@ alias urpmq='apt-cache search'
 alias fdr='fakeroot debian/rules'
 alias ssh='ssh -2 -X -o Compression=no -c aes128-gcm@openssh.com' 
 alias rs='redshift -O 4200k -r'
+alias night='sudo sh -c "echo 1 > /sys/class/backlight/intel_backlight/brightness"'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
