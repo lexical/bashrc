@@ -119,6 +119,8 @@ alias fdr='fakeroot debian/rules'
 alias ssh='ssh -2 -X -o Compression=no -c aes128-gcm@openssh.com' 
 alias rs='redshift -O 4200k -r'
 alias night='sudo sh -c "echo 1 > /sys/class/backlight/intel_backlight/brightness"'
+alias rscp='rsync -aP'
+alias rsmv='rsync -aP --remove-source-files'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
