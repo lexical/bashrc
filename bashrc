@@ -14,9 +14,6 @@ export EDITOR=vim
 export DEBFULLNAME="Keng-Yu Lin"
 export DEBEMAIL="kengyu@lexical.tw"
 
-#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-#export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin
-
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -97,7 +94,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias vi='vim'
     alias rm='rm -i'
     #alias sendpatch='git send-email --nochain-reply-to --thread --suppress-cc all --smtp-server /usr/bin/msmtp --from keng-yu.lin@canonical.com --to kernel-team@lists.ubuntu.com'
-    alias svn-clean='svn st --no-ignore | grep "^[I?]" | awk "{print $2}" | xargs rm -rf'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
@@ -113,12 +109,9 @@ alias la='ls -A'
 alias rm='rm -i'
 alias urpmi='sudo apt-get install'
 alias urpmq='apt-cache search'
-#alias g='grep'
-#alias gr='grep -nHr'
 alias fdr='fakeroot debian/rules'
 alias ssh='ssh -2 -X -o Compression=no -c aes128-gcm@openssh.com' 
 alias rs='redshift -O 4200k -r'
-alias night='sudo sh -c "echo 1 > /sys/class/backlight/intel_backlight/brightness"'
 alias rscp='rsync -aP'
 alias rsmv='rsync -aP --remove-source-files'
 
